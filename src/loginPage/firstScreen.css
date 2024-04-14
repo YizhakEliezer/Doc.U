@@ -1,0 +1,101 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("background-imageLogin.jpg");  
+    background-size: cover;
+    color: #fff;
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.login-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.title-firstScreen{
+   text-align: center;
+}
+
+.login-input-container {
+    position: relative;
+ 
+}
+
+.login-input {
+    width: calc(90% - 20px); 
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+
+.login-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.login-button, .register-button {
+    padding: 7px 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-button:hover, .register-button:hover {
+    background-color: rgb(209, 219, 219);
+    color: rgb(114, 123, 123);
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.register-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+
+
+.rotating-image {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rotateImage 20s linear infinite;
+    width: 12%;
+}
+
+@keyframes rotateImage {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
