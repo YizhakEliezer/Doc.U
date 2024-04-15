@@ -6,10 +6,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("background-imageLogin.jpg");  
+    background-image: url("pexelsjpg.jpg"); /* שימוש בתמונה בפורמט jpg */
     background-size: cover;
+    background-position: center;
     color: #fff;
 }
+
 
 .login-container {
     width: 300px;
@@ -84,12 +86,21 @@ body {
 
 .rotating-image {
     position: absolute;
-    top: 40px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    animation: rotateImage 20s linear infinite;
-    width: 12%;
+    animation: rotateImage 30s linear infinite;
+    /* width:60%; */
+     width:10%; 
 }
+
+
+@media (max-width: 767px) {
+    .rotating-image {
+        width: 30%
+    }
+}
+
 
 @keyframes rotateImage {
     from {
